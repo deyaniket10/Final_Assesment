@@ -446,6 +446,9 @@ a {
     font-size: 14px;
     color: #ffffff;
 }
+.footer-end>a:hover{
+    color: var(--btn--color) !important;
+}
 
 /* sub footer */
 .sub-footer {

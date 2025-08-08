@@ -233,6 +233,7 @@ a {
 
 .potential-hdr-img {
     max-width: 475px;
+    margin: 0;
 }
 
 .potential-hdr-img>img {
@@ -244,6 +245,7 @@ a {
 .potential-scnd-hdr-img {
     max-width: 440px;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 .potential-scnd-hdr-img>img {

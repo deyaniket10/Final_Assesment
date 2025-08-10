@@ -53,7 +53,8 @@ h2,
 .title2,
 .card-title,
 h5,
-.foot-top {
+.foot-top,
+.foot-sub {
     font-family: "Sangbleu", sans-serif;
 }
 
@@ -82,7 +83,10 @@ a {
 }
 
 /* header */
-
+.navbar {
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
 
 .navbar-container {
     max-width: 1428px !important;
@@ -96,12 +100,13 @@ a {
 }
 
 .nav-btn {
-    padding: 16px 14px !important;
+    padding: 12px 14px !important;
     background: #EAE4EA;
     border: 1px solid #E5DCE5;
     border-radius: 50px;
     min-width: 112px !important;
     color: #18212d;
+    line-height: 1;
 }
 
 .nav-btn:hover {
@@ -187,6 +192,8 @@ a {
 
 .banner-btn {
     padding: 20px 24px !important;
+    margin-bottom: 36px;
+    line-height: 1;
 }
 
 .banner-btn:hover {
@@ -198,16 +205,15 @@ a {
     margin: 0 auto 30px;
 }
 
-.banner-content>a {
-    margin-bottom: 36px;
-}
 
 .banner-content>figure {
+    background:rgba(255, 255, 255, .2);
     border: 1px solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     max-width: 1140px;
     padding: 13px 15px 0;
+    border-bottom-style: none;
 }
 
 .banner-content>figure>img {
@@ -355,6 +361,10 @@ a {
 
 /* Footer Section */
 .footer-section {
+    background-color: #eae4ea;
+}
+
+.footer-wrapper {
     padding: 123px 0 16px;
     background: var(--font--color);
     border-top-left-radius: 25px;
@@ -374,6 +384,10 @@ a {
     font-weight: 500;
 }
 
+.foot-link:hover {
+    color: #aa6aaa;
+}
+
 .list-item>li {
     margin-bottom: 24px;
 }
@@ -381,13 +395,30 @@ a {
 .foot-top {
     font-size: 18px;
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
+    padding-left: 2rem;
+}
+
+.foot-sub {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 25px;
 }
 
 .top::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -15px;
+    left: 2rem;
+    height: 1px;
+    width: 52px;
+    background-color: #ffffff;
+}
+
+.foot-sub::after {
+    position: absolute;
+    content: "";
+    bottom: -15px;
     left: 0;
     height: 1px;
     width: 52px;
@@ -406,19 +437,24 @@ a {
     border-radius: 50px;
     border: 1px solid #eefdf8;
     background: transparent;
-
-
 }
 
 
 .tel {
     height: 46px;
-    width: 46px;
-    padding: 7px;
+    min-width: 46px;
     border-radius: 50%;
     background-color: var(--btn--color);
-    border: none;
+    background-image: url(../Assets/tele.png);
+    background-size: 28px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    -webkit-appearance: button;
+    font-size: 0px;
+    line-height: 0;
+    transition: all .5s ease-in-out;
     outline: none;
+    border: none;
 }
 
 .tel:hover {
@@ -478,7 +514,7 @@ a {
 
 .s-content {
     width: 100%;
-    padding: 38px 35px;
+    padding: 35px;
     background-color: #8a737d;
     border-radius: 6px;
 }
@@ -551,10 +587,9 @@ a {
     .nav-btn-sm>a {
         background: #eae4ea;
         border: 1px solid #E5DCE5;
-        min-width: 112px;
-        padding: 5px 10px;
+        padding: 12px 14px;
         color: var(--font--color) !important;
-
+        line-height: 1;
     }
 
     .nav-btn-sm>a:hover {
@@ -575,6 +610,7 @@ a {
     .navbar-brand {
         max-width: 110px;
         left: 50px;
+        bottom: -50px;
     }
 
     .navbar-nav .nav-link {
@@ -627,6 +663,15 @@ a {
 
     .extraordinary-section .title2 {
         font-size: 40px;
+    }
+
+    .list-item,
+    .foot-top {
+        padding-left: 0;
+    }
+
+    .top::after {
+        left: 0;
     }
 }
 
@@ -697,6 +742,11 @@ a {
 
     .navbar-brand {
         left: 15px;
+    }
+
+    .navbar-toggler {
+        margin-left: 4px;
+        padding: .25rem .5rem;
     }
 
     .banner-section .para {
@@ -770,7 +820,7 @@ a {
     }
 
     .foot-top {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         font-size: 14px;
     }
 
@@ -803,5 +853,9 @@ a {
 
     .footer-end>a {
         font-size: 12px;
+    }
+
+    .foot-sub {
+        margin-bottom: 16px;
     }
 }

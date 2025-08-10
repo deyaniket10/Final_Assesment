@@ -258,9 +258,11 @@ a {
 .potential-btn {
     padding: 15px 41px;
 }
-.potential-btn:hover{
+
+.potential-btn:hover {
     background-color: black !important;
 }
+
 .potential-scnd>div>p {
     margin: 72px 0 77px;
     max-width: 499px;
@@ -415,10 +417,15 @@ a {
     padding: 7px;
     border-radius: 50%;
     background-color: var(--btn--color);
+    border: none;
+    outline: none;
+}
+
+.tel:hover {
+    background-color: #000;
 }
 
 .tel-btn {
-    background: url(../Assets/tele.png) no-repeat center/contain;
     height: 23px;
     width: 28px;
     border: none;
@@ -428,6 +435,10 @@ a {
     padding: 8px;
     height: 41px;
     width: 41px;
+}
+
+.py-icon:hover {
+    background-color: #aa6aaa !important;
 }
 
 .foot-logo {
@@ -445,11 +456,13 @@ a {
 
 }
 
-.footer-end>a {
+.footer-end>a,
+.footer-end {
     font-size: 14px;
     color: #ffffff;
 }
-.footer-end>a:hover{
+
+.footer-end>a:hover {
     color: var(--btn--color) !important;
 }
 
@@ -487,7 +500,8 @@ a {
     min-width: 153px;
     background: white;
 }
-.s-btns:hover{
+
+.s-btns:hover {
     background-color: #000;
     color: white;
 }

@@ -466,7 +466,14 @@ a {
     width: 28px;
     border: none;
 }
-
+.py-ic{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
 .py-icon {
     padding: 8px;
     height: 41px;
@@ -827,10 +834,6 @@ a {
     ol,
     ul {
         padding-left: 0 !important;
-    }
-
-    .py-ic {
-        justify-content: center !important;
     }
 
 
